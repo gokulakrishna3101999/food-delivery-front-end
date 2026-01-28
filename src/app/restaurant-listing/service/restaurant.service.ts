@@ -1,4 +1,4 @@
-import { API_URL_RL } from "src/app/constants/url";
+import { API_BASE_URL } from "src/app/constants/url";
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
@@ -8,7 +8,7 @@ import { catchError } from "rxjs/operators";
     providedIn: 'root'
 })
 export class RestaurantService {
-    private apiUrl = API_URL_RL + '/restaurant/get';
+    private apiUrl = API_BASE_URL + '/restaurant/get';
 
     constructor(private http: HttpClient) {}
 

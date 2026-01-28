@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
-import {  API_URL_OS } from 'src/app/constants/url'; 
+import { Observable } from 'rxjs';
+import {  API_BASE_URL } from 'src/app/constants/url'; 
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import {  API_URL_OS } from 'src/app/constants/url';
 
 export class OrderService {
 
-  private apiUrl = API_URL_OS+'/order/save';
+  private apiUrl = API_BASE_URL+'/order/save';
 
   constructor(private http: HttpClient) { }
 

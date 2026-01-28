@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators'; 
-import { API_URL_FC } from 'src/app/constants/url';
+import { API_BASE_URL } from 'src/app/constants/url';
 
 @Injectable({
     providedIn: 'root'
 })
 export class FoodItemService {
 
-    private apiUrl = API_URL_FC+'/foodCatalogue/restaurant/get/';
+    private apiUrl = API_BASE_URL+'/foodCatalogue/restaurant/get/';
 
     constructor(private http: HttpClient) { }
 
