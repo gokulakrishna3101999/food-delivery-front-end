@@ -3,4 +3,4 @@
 // export const API_URL_OS ='http://localhost:8084';
 
 
-export const API_BASE_URL = 'http://k8s-default-awsingre-9aa4c55379-1087600044.us-east-1.elb.amazonaws.com';
+export const API_BASE_URL = 'http://k8s-default-awsingre-9aa4c55379-68033484.us-east-1.elb.amazonaws.com';
